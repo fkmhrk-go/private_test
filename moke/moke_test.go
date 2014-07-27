@@ -12,8 +12,10 @@ func TestHello(t *testing.T) {
 	}
 }
 
+// テストのパッケージと同じパッケージなので、
+// 小文字始まりの関数も呼べる
 func TestInternalHello(t *testing.T) {
-	v := ExFunc("Mike")
+	v := internalHello("Mike")
 	if v != "My name is Mike" {
 		t.Errorf("Assertin failed %s", v)
 		return
