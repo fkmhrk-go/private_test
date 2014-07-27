@@ -1,4 +1,4 @@
-package moke_test
+package moke
 
 import (
 	. "."
